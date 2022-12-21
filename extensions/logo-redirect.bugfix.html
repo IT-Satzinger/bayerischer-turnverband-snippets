@@ -1,11 +1,10 @@
 <script>
-  // setup / init logo
-  window.addEventListener('DOMContentLoaded', () =>
-    document
-      .getElementsByClassName('logo')[0]
-      .setAttribute(
-        'href',
-        'https://oberfranken.btv-turnen.de/coburg-frankenwald'
-      )
-  );
+  function replaceLogoLink() {
+  const link = "https://oberbayern.btv-turnen.de/donau-ilm";
+  const logo = document.querySelector(".logo");
+  logo.setAttribute("href", link);
+}
+
+window.addEventListener("load", replaceLogoLink);
 </script>
+
